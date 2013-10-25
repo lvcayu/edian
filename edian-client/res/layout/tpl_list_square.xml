@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_gravity="top">
+    <ImageView android:contentDescription="@string/faceimage_hint" 
+        android:id="@+id/tpl_list_square_image"
+        android:layout_width="50dip" android:layout_height="50dip"
+        android:layout_margin="3dip" android:src="@drawable/face" android:clickable="true" android:background="@drawable/facebg"/>
+   <!--  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_gravity="center">   -->
+	    <TextView android:id="@+id/tpl_list_square_nickname"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:paddingLeft="5dp" android:paddingRight="2dp" android:paddingTop="0dp" android:paddingBottom="1dp" android:textSize="14dip" android:textColor="#FF625F5B"/>
+	<!--     <TextView android:id="@+id/tpl_list_square_nickname2"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingTop="1dp" android:paddingBottom="1dp" android:text="test"/>  -->
+	    
+	     <ImageView android:contentDescription="@string/sexlogo_hint" 
+	        android:id="@+id/tpl_list_square_sexlogo"
+	        android:layout_width="14dip" android:layout_height="14dip"
+	        android:layout_marginLeft="3dp" android:layout_marginTop="1dp" android:layout_marginRight="2dp" android:layout_marginBottom="4dp" android:src="@drawable/boy_sign" android:focusable="false"/>
+    <!-- </LinearLayout>  -->
+    </LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:layout_gravity="top" android:orientation="vertical"
+	    android:background="@drawable/chatfrom_bg_normal">
+	    <TextView android:id="@+id/tpl_list_square_content"
+	        android:layout_width="fill_parent" android:layout_height="fill_parent"
+	        android:padding="2dp" android:text="@string/tpl_list_square_content_default" android:textSize="14dip" android:textColor="#FF3B3838" android:gravity="top"/>
+	    <!-- split line -->
+	    <View android:layout_width="match_parent" android:layout_height="1dip" android:background="#22D7D6D4" android:layout_marginLeft="2dip" android:layout_marginRight="2dip"/>
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    <!-- <TextView android:id="@+id/tpl_list_square_click"
+		        android:layout_alignParentLeft="true"
+		        android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:padding="2dp" android:text="0"/> -->
+		    <TextView android:id="@+id/tpl_list_square_createtime"
+		        android:layout_alignParentRight="true"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:padding="2dp" android:text="@string/tpl_list_square_createtime_default"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

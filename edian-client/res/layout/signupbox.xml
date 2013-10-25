@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_signupbox"
+    style="@style/edittext_bg_style"
+    android:layout_width="260dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/inputbox_signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:maxLength="16"
+        android:background = "@color/transparent"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="5dip"
+        android:hint="@string/sign_hint_username">
+        <requestFocus />
+    </EditText>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/gray"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"/>
+    
+    <EditText
+        android:id="@+id/signup_inputbox_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:background = "@color/transparent"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="5dip"
+        android:hint="@string/sign_hint_password"/>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/gray"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"/>
+    
+    <EditText
+        android:id="@+id/signup_inputbox_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:background = "@color/transparent"
+        android:paddingLeft="10dip"
+        android:paddingTop="10dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="5dip"
+        android:hint="@string/sign_hint_password_confirm"/>
+</LinearLayout>

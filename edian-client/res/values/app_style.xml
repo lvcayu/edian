@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="app_style">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/app_bg</item>
+        <item name="android:tileMode">disabled</item>
+    </style>
+    
+    <style  name="style_signuptop_bgshape">
+        <item name="android:background">@drawable/shape_signuptop</item>
+    </style>
+    
+    <style name="style_signuptop_color">
+        <item name="android:background">@color/black</item>
+    </style>
+    
+</resources>

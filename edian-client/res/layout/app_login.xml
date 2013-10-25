@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_load" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="top" >
+
+        <ImageView
+            android:id="@+id/bannerImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/banner" />
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+		        <include layout="@layout/signinbox"
+	            android:id="@+id/inputbox" />
+		        
+	            <Button android:id="@+id/signinbtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/signin"
+	            android:layout_below="@id/inputbox"
+	            android:layout_alignLeft="@id/inputbox"
+	            android:layout_alignRight="@id/inputbox"
+	            android:onClick="doTaskLogin" />
+	            
+	            <CheckBox
+	                android:id="@+id/ifsavepwd_checkbox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/ifsavepwd_checkbox"
+	                android:layout_below="@id/signinbtn"
+	                android:layout_alignLeft="@id/signinbtn" />
+	
+	            <TextView
+	                android:id="@+id/signup_tv_btn"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/signup_btn_text"
+	                android:textColor="@color/purple"
+	                android:paddingLeft="20dp"
+	                android:layout_below="@id/signinbtn"
+	                android:layout_alignRight="@id/signinbtn"
+	                android:layout_marginTop="10dp"
+	                android:onClick="doSignup"
+	                android:clickable="true" />
+	            
+	        </RelativeLayout>
+        
+        </LinearLayout>
+</LinearLayout>
+</merge>

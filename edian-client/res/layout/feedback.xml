@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_load"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_gravity="top" >
+    <!-- header define -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/style_signuptop_color">
+       <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingRight="10dip" android:paddingTop="6dip" android:paddingBottom="6dip" android:background="@drawable/shape_signuptop">
+	        <Button android:id="@+id/pub_cancel_btn" android:onClick="cancel" android:text="取消" android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:background="@drawable/gohome_btn"/>
+	        <TextView android:text="意见反馈" android:id="@+id/pub_header" android:textSize="20.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+	        <Button android:id="@+id/pub_done_btn" android:onClick="sendfeedback" android:text="发送" android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:background="@drawable/save_btn"/>
+	    </RelativeLayout>
+    </LinearLayout>
+    <!-- content define -->
+    <LinearLayout android:id="@+id/pub_main" android:padding="6.0dip" android:orientation="vertical" android:gravity="top" android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="fill_parent">
+        <EditText android:id="@+id/feedback_content" 
+           android:layout_width="match_parent" android:layout_height="360dp" android:padding="6.0dip"
+           android:textColor="#0F0E0E" android:textSize="14dp"
+           android:hint="在这里输入你想对我们说的" android:gravity="top" android:background="@drawable/pub_content"/>
+    </LinearLayout>
+</LinearLayout>
+</merge>

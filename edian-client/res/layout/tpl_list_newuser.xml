@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView android:contentDescription="@string/faceimage_hint" 
+        android:id="@+id/tpl_list_newuser_image"
+        android:layout_width="50dip" android:layout_height="50dip"
+        android:layout_margin="5dip" android:src="@drawable/face" android:focusable="false" />
+    <LinearLayout android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tpl_list_newuser_nickname"
+                android:layout_alignParentLeft="true" 
+                android:paddingLeft="3dip" android:paddingRight="30dip"
+                android:layout_width="140dip" android:layout_height="wrap_content" android:text="@string/newuserlist_nickname_default" android:textColor="@color/text"
+                android:ellipsize="marquee" android:singleLine="true"/>
+            <TextView android:id="@+id/tpl_list_newuser_time"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="3dip" android:paddingRight="3dip"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newuserlist_sexandtime_default" android:textColor="@color/text"/>
+            <ImageView android:id="@+id/tpl_list_newuser_sex"
+                android:layout_width="14dip" android:layout_height="14dip"
+                android:layout_toLeftOf="@id/tpl_list_newuser_time"/>
+            <TextView android:id="@+id/tpl_list_newuser_age"
+                android:layout_toLeftOf="@id/tpl_list_newuser_sex"
+                android:paddingLeft="3dip" android:paddingRight="3dip"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newuserlist_age_default" android:textColor="@color/text"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/tpl_list_newuser_heartsay"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="@string/newuserlist_heartsay_default" android:textColor="@color/weaktext"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_load"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >    
+    <!--  header begin -->
+    <LinearLayout style="@style/style_signuptop_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content">
+              
+	    <LinearLayout style="@style/style_signuptop_bgshape" 
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal" >   
+	        
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/signup_freesignup"
+		                android:textSize="20dp"
+		                android:textColor="@color/color_signup2_text" />
+	            
+	    </LinearLayout>
+    </LinearLayout>
+    <!-- header end -->
+    <!-- content begin -->
+        <ImageView
+            android:id="@+id/signup_bannerImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/banner" />
+        
+
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+	        
+	        <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+		        <include layout="@layout/signupbox"
+	            android:id="@+id/inputbox_signup"/>
+		        
+	            <Button android:id="@+id/signupbtn"
+	                android:onClick="onNextbtnClick"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/signup_nextstep"
+	            android:layout_below="@id/inputbox_signup"
+	            android:layout_alignLeft="@id/inputbox_signup"
+	            android:layout_alignRight="@id/inputbox_signup"/>
+	            
+	            
+	        </RelativeLayout>
+        
+        </LinearLayout>
+
+</LinearLayout>
+</merge>

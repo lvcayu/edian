@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:topLeftRadius="10dip"
+        android:topRightRadius="10dip" />
+    <solid android:color="@color/color_signuptop_bg"/>
+    <size android:width="480dip"
+        android:height="40dip" />
+
+</shape>

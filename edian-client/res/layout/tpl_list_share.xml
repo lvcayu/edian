@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView android:contentDescription="@string/faceimage_hint" 
+        android:id="@+id/tpl_list_share_image"
+        android:clickable="true"
+        android:layout_width="50dip" android:layout_height="50dip"
+        android:layout_margin="5dip" android:src="@drawable/face" android:focusable="false" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:layout_gravity="center" android:orientation="vertical">
+	    <TextView android:id="@+id/tpl_list_share_title"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:textSize="16dip" android:textColor="#3A3636"
+	        android:padding="2dp" android:text="@string/tpl_list_square_title_default"/>
+	    <!-- split line 
+	    <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/gray" android:layout_marginLeft="2dip" android:layout_marginRight="2dip"/>
+	    -->
+	    <TextView android:id="@+id/tpl_list_share_content"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:textSize="12dip" android:textColor="#DDDDDD"
+	        android:padding="2dp" android:text="@string/tpl_list_square_content_default"/>
+	    <!-- split line 
+	    <View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/gray" android:layout_marginLeft="2dip" android:layout_marginRight="2dip"/>
+	    -->
+	    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+		    <TextView android:id="@+id/tpl_list_share_createtime"
+		        android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:padding="2dp" android:text="@string/tpl_list_square_createtime_default" android:textColor="@color/weaktext"/>
+		    <TextView android:id="@+id/tpl_list_share_author"
+		        android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:padding="2dp" android:text="@string/tpl_list_share_author_default" android:textColor="@color/weaktext"/>
+	    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

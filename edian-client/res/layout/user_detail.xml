@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_load"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top" >
+<!-- header define -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/style_signuptop_color">
+       <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingRight="10dip" android:paddingTop="6dip" android:paddingBottom="6dip" android:background="@drawable/shape_signuptop">
+	        <Button android:id="@+id/ud_back_btn" android:onClick="back" android:text="返回" android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:background="@drawable/gohome_btn"/>
+	        <TextView android:text="@string/detail_title" android:textSize="20.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+	        <Button android:id="@+id/ud_done_btn" android:onClick="confirm" android:text="举报" android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:background="@drawable/save_btn"/>
+	    </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="3dp">
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="match_parent" android:layout_height="wrap_content">
+	    <ImageView android:id="@+id/detail_fingure" android:contentDescription="@string/faceimage_hint"
+        android:layout_width="50dip" android:layout_height="50dip"
+        android:layout_margin="5dip" android:src="@drawable/face" android:focusable="false" />
+	    
+	    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical">
+	    	<TextView android:id="@+id/detail_nickname"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:textColor="@color/black" android:textSize="14sp"
+	            android:padding="1dp"
+	            android:layout_alignParentLeft="true"/>
+	    	<ImageView android:id="@+id/detail_sexlogo"
+	    	    android:layout_width="14dp" android:layout_height="14dp"
+	    	    android:layout_below="@id/detail_nickname"/>
+	    	<TextView android:id="@+id/detail_sex"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:textColor="@color/black" android:textSize="12sp"
+	            android:padding="1dp"
+	            android:layout_below="@id/detail_nickname" android:layout_toRightOf="@id/detail_sexlogo"/>
+	        <TextView android:id="@+id/detail_age"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:textColor="@color/black" android:textSize="12sp"
+	            android:paddingLeft="30dp" android:paddingTop="1dp" android:paddingRight="1dp" android:paddingBottom="1dp"
+	            android:layout_below="@id/detail_nickname" android:layout_toRightOf="@id/detail_sex"/>
+	        <TextView android:id="@+id/detail_ismarried"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:textColor="@color/black" android:textSize="12sp"
+	            android:padding="1dp"
+	            android:layout_below="@id/detail_sexlogo"/>
+	        <TextView android:id="@+id/detail_signuptime"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:textColor="@color/black" android:textSize="12sp"
+	            android:padding="1dp"
+	            android:layout_alignParentRight="true" android:layout_below="@id/detail_sex"/>
+	    </RelativeLayout>
+	</LinearLayout>
+	<TextView android:background="@color/transparent"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:textColor="@color/gray" android:textSize="16sp" android:text="@string/attitude_title"/>
+	<TextView android:id="@+id/detail_attitude" style="@style/edittext_bg_style"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:textColor="@color/black" android:textSize="12sp"/>
+ 	<TextView android:background="@color/transparent"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:textColor="@color/gray" android:textSize="16sp" android:text="@string/heartsay_title"/>
+	<TextView android:id="@+id/detail_heartsay" style="@style/edittext_bg_style"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:textColor="@color/black" android:textSize="12sp"/>
+	<TextView android:background="@color/transparent"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:textColor="@color/gray" android:textSize="16sp" android:text="@string/experience_title"/>
+	<TextView android:id="@+id/detail_experience" style="@style/edittext_bg_style"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:textColor="@color/black" android:textSize="12sp"/>
+	<TextView android:background="@color/transparent"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:textColor="@color/gray" android:textSize="16sp" android:text="QQ"/>
+	<TextView android:id="@+id/detail_qq" style="@style/edittext_bg_style"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:textColor="@color/black" android:textSize="12sp"/>
+	<TextView android:background="@color/transparent"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:textColor="@color/gray" android:textSize="16sp" android:text="Tel"/>
+	<TextView android:id="@+id/detail_tel" style="@style/edittext_bg_style"
+	    android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:padding="6dp"
+	    android:textColor="@color/black" android:textSize="12sp"/>
+	</LinearLayout> 
+</LinearLayout>
+</merge>

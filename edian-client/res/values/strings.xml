@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signin">登录</string>
+    <string name="app_name">伊甸园</string>
+    <string name="maindesc">测试</string>
+	<string name="sign_hint_username">请输入用户名</string>
+	<string name="sign_hint_password">请输入密码</string>
+	<string name="ifsavepwd_checkbox">记住密码</string>
+	<string name="signup_btn_text">创建帐号</string>
+	<string name="signup_qq">QQ：</string>
+	<string name="signup_hint_qq">请输入QQ号</string>
+	<string name="signup_hint_sex">性别：</string>
+	<string name="signup_hint_city">城市：</string>
+	<string name="sign_hint_password_confirm">请再次输入密码</string>
+	<string name="signup_nextstep">下一步</string>
+	<string name="signup_finishprofile">完善资料</string>
+	<string name="signup_freesignup">免费注册</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="signup_commit">提交</string>
+	<string name="provincedialogtitle">请选择省份</string>
+	<string name="exit">退出</string>
+	<string name="newuserlist_heartsay_default">Ta还不想说......</string>
+	<string name="newuserlist_nickname_default">name</string>
+	<string name="newuserlist_age_default">age</string>
+	<string name="newuserlist_sexandtime_default">性别|刚刚</string>
+	<string name="faceimage_hint">头像</string>
+	<string name="sexlogo_hint">性别</string>
+	<string name="context_font">12sp</string>
+	<string name="subtitle_font">16sp</string>
+	<string name="attitude_title">态度</string>
+	<string name="heartsay_title">心声</string>
+	<string name="experience_title">经历</string>
+	<string name="detail_title">用户详情</string>
+	<string name="load_more_ing">正在加载……</string>
+	<string name="tpl_list_square_title_default">无标题</string>
+	<string name="tpl_list_square_content_default">无内容</string>
+	<string name="tpl_list_square_createtime_default">无创建时间</string>
+	<string name="tpl_list_share_author_default">未知作者</string>
+	<string name="user_center_title">用户中心</string>
+	<string name="update_profile_title">更新资料</string>
+	
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到有新版本，去更新吗？</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">暂不更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="soft_update_nonotice">一周内不再提醒</string>
+</resources>

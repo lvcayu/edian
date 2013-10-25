@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="com.app.demos.theme.login" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="com.app.demos.theme.light" parent="android:Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="com.app.weibo.theme.dialog" parent="android:Theme.Dialog">
+		<!--<item name="android:windowFrame">@null</item> -->
+		<!--<item name="android:windowIsFloating">true</item> -->
+		<!--<item name="android:windowIsTranslucent">false</item> -->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@null</item>
+		<!--<item name="android:backgroundDimEnabled">false</item> -->
+	</style>
+	<style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+    <style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>      	
+       	<item name="android:listSelector">@drawable/listview_item_selector</item>
+       	<item name="android:divider">@drawable/listview_divider_line</item>
+       	<item name="android:dividerHeight">1.0dip</item>
+       	<item name="android:fadingEdge">none</item>
+       	<item name="android:scrollingCache">false</item>
+    </style>
+    <style name="square_listview">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>      	
+       	<item name="android:listSelector">@drawable/listview_item_selector</item>
+       	<item name="android:divider">#00ffffff</item>
+       	<item name="android:dividerHeight">1.0dip</item>
+       	<item name="android:fadingEdge">none</item>
+       	<item name="android:scrollingCache">false</item>
+    </style>
+</resources>

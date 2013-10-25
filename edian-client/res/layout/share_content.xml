@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_load"/>
+<ScrollView android:layout_width="match_parent" android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- header define -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/style_signuptop_color">
+       <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingRight="10dip" android:paddingTop="6dip" android:paddingBottom="6dip" android:background="@drawable/shape_signuptop">
+	        <Button android:id="@+id/sc_back_btn" android:onClick="back" android:text="返回" android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:background="@drawable/gohome_btn"/>
+	        <TextView android:text="别人的经验" android:textSize="20.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+	    </RelativeLayout>
+    </LinearLayout>
+    <!-- content define -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="fill_parent" android:padding="6.0dip" android:orientation="vertical">
+        <TextView android:id="@+id/sc_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="无题" android:textColor="@color/black" android:textSize="16.0dip" android:background="#00ffffff"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_marginBottom="3.0dip">
+            <TextView android:id="@+id/sc_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="佚名" android:textSize="12.0dip" android:textColor="#FFCE39C2" android:background="#00FFFFFF" android:layout_alignParentLeft="true"/>
+            <TextView android:id="@+id/sc_pubat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布于" android:textSize="12.0dip" android:textColor="#FFB5B2B2" android:background="#00FFFFFF" android:layout_toRightOf="@id/sc_author" android:paddingLeft="6dip"/>
+            <TextView android:id="@+id/sc_pubtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刚刚" android:textSize="12.0dip" android:textColor="#FFCE39C2" android:background="#00FFFFFF" android:layout_toRightOf="@id/sc_pubat" android:paddingLeft="6dip"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent" android:layout_height="2.0dip" android:background="#FFAA9491"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip">
+            <TextView android:id="@+id/sc_content" android:layout_width="match_parent" android:layout_height="fill_parent" android:text="未填写内容" android:textSize="14.0dip" android:textColor="@color/black" android:background="#00FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</merge>

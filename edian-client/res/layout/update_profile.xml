@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/main_load"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >    
+    <!--  header begin -->
+    <LinearLayout style="@style/style_signuptop_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content">
+              
+	    <RelativeLayout style="@style/style_signuptop_bgshape"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	       <Button android:id="@+id/uc_profile_back"
+	            android:layout_width="63dp" android:layout_height="28dp"
+	            android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+	            android:background="@drawable/gohome_btn"
+	            android:text="返回" android:textColor="#ffffff"/>
+	       
+           <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/update_profile_title"
+                android:textSize="20dp" android:textColor="@color/color_signup2_text" />
+	            
+          <Button android:id="@+id/uc_profile_save"
+                android:layout_width="56dp" android:layout_height="28dp"
+                android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                android:background="@drawable/save_btn"
+                android:text="保存" android:textColor="#ffffff"/>
+
+	    </RelativeLayout>
+    </LinearLayout>
+    <!-- header end -->
+    <!-- content begin -->
+    <LinearLayout android:orientation="vertical" android:paddingTop="6dp" android:paddingLeft="10dp" android:paddingRight="10dp"
+        android:layout_gravity="top" android:gravity="center"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+		<RelativeLayout style="@style/edittext_bg_style"
+		    android:paddingLeft="10dp" android:paddingRight="10dp"
+		    android:paddingTop="3dp" android:paddingBottom="3dp"
+		    android:layout_width="match_parent" android:layout_height="wrap_content">
+		    <TextView android:id="@+id/qq_input_head" 
+		        android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:text="QQ"/>
+		    <ImageView android:id="@+id/seperater" android:src="@drawable/line_shading_home" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_toRightOf="@id/qq_input_head"/>
+		    <EditText android:id="@+id/update_info_qq"
+		        android:layout_width="fill_parent" android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/seperater" android:layout_centerVertical="true"
+		        android:background="#ffffffff"
+		        android:hint="Please input qq id"/>
+		</RelativeLayout>
+		<Button android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>
+</merge>

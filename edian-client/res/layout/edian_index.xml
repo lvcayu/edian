@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_load"/>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="top" >
+    <include layout="@layout/common_top"/>
+    
+	<!-- 	<ListView android:id="@+id/newuser_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:descendantFocusability="blocksDescendants"
+			android:fadingEdge="vertical" android:fadingEdgeLength="5dip" android:divider="@null"
+			android:listSelector="@drawable/xml_list_bg" android:cacheColorHint="#00000000" />
+	 -->
+	 
+	 <com.edian.www.widget.PullToRefreshListView 
+	     android:id="@+id/newuser_listview"
+	     style="@style/widget_listview"/>
+	 
+</LinearLayout>
+</merge>
